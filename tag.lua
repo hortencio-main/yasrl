@@ -4,7 +4,7 @@ end
 
 local file = io.open(arg[1], "r")
 if not file then
-    print("Usage: lua script.lua <filename>")
+    print("Usage: lua tag.lua <filename>")
     os.exit(1)
 end
 local s = file:read("*a")
