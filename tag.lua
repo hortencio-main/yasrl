@@ -21,7 +21,9 @@ s = s:gsub("\\%s*(.-)%s*\\", "")
 
 s = s:gsub("/([^/]+)/([^/]*)/", ""):gsub("\n", ""):gsub("\t","")
 
+local b = ""
 repeat
+	b = s
 	for l1 = 1, #ruleset, 2 do
 		repeat
 			s = string.gsub(s, escape(ruleset[l1]), ruleset[l1+1])
@@ -30,7 +32,7 @@ repeat
 	--~ if string.sub(s,2,2) == "$" then
 		print(s)
 	--~ end
-until string.find(s, exit_condition)
+until (string.find(s, exit_condition)) or (b == s)
 
 --[[
 
