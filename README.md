@@ -1,7 +1,7 @@
 # yasrl
 Interpreter for yet another string-rewriting esoteric programming language
 
-# usage
+## usage
 ```
 lua tag.lua <filename>
 ```
