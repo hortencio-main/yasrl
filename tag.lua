@@ -29,7 +29,5 @@ repeat
 			s = string.gsub(s, escape(ruleset[l1]), ruleset[l1+1])
 		until string.find(s, ruleset[l1]) == nil
 	end
-	--~ if string.sub(s,2,2) == "$" then
-		print(s)
-	--~ end
+	print(s)
 until (string.find(s, exit_condition)) or (b == s)
