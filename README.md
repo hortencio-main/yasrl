@@ -1,5 +1,5 @@
 # yasrl
-Interpreter for yet another string-rewriting esoteric programming language
+Yet another string-rewriting esoteric programming language
 
 ## usage
 ```
